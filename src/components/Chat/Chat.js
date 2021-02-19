@@ -16,7 +16,7 @@ export const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  const ENDPOINT = "https://chatapp-meguitif.herokuapp.com/;
+  const ENDPOINT = "https://chatapp-meguitif.herokuapp.com/";
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     setName(name);
